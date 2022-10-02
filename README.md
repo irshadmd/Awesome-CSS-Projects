@@ -11,7 +11,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/irshadmd/Awesome-CSS-Projects)](https://github.com/irshadmd/Awesome-CSS-Projects/stargazers)
 
 
-[![Hacktoberfest 2021](./assets/img/hacktober.png)](https://hacktoberfest.digitalocean.com/)
+[![Hacktoberfest 2022](./assets/img/hacktober.png)](https://hacktoberfest.com/)
 
 <p align="center"><img src="https://media.giphy.com/media/MNmyTin5qt5LSXirxd/giphy.gif" width = 40%>
 <br/>
@@ -93,7 +93,8 @@ git checkout -b <your_branch_name>
 ```
 
 **8.** Perfom your desired changes to the code base.
-> create a folder and add all code in that folder only
+> 1. create a folder and add all code in that folder only.
+> 2. create a demo folder inside "Your Project" and add a gif of your project named demo.gif
 
 **9.** Track your changes:heavy_check_mark: .
 
