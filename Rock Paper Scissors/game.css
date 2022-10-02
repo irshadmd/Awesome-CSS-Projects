@@ -1,0 +1,96 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    margin:16px 0;
+    text-align:center;
+}
+
+#board {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+      "yours yours yours theirs theirs theirs"
+      "outcome outcome outcome outcome outcome outcome"
+      "rock rock paper paper scissors scissors";
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 1fr;
+
+    font-size:12vmin;
+    user-select: none;
+}
+
+#yours {
+    grid-area: yours;
+}
+#yours:before {
+    content: "Yours";
+}
+#theirs {
+    grid-area: theirs;
+}
+#theirs:before {
+    content: "Theirs";
+}
+
+#yours, #theirs {
+    margin: 30px 10px 10px 10px;
+
+    position: relative;
+}
+#yours:before, #theirs:before {
+    position: absolute;
+    top:-20px;
+    left:45%;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+}
+#yours:empty, #theirs:empty {
+    display: none;
+}
+
+
+#yours, #theirs {
+    text-align:center;
+}
+
+#outcome {
+    grid-area: outcome;
+
+    text-align:center;
+}
+#outcome.win {
+    color: green;
+}
+#outcome.lose {
+    color: red;
+}
+#outcome.draw {
+    color: grey;
+}
+
+
+#rock {
+    grid-area: rock;
+}
+#paper {
+    grid-area: paper;
+}
+#scissors {
+    grid-area: scissors;
+}
+
+#rock, #paper, #scissors {
+    cursor: pointer;
+    font-size:10vmin;
+    text-align:center;
+}
