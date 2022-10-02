@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 600px;
+  width: 600px;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+}
+
+.img-box {
+  width: 60%;
+  margin: auto;
+  line-height: 0;
+  background-image: url(img/background.png);
+  overflow: hidden;
+  position: relative;
+}
+.img-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+span {
+  width: 2px;
+  height: 100%;
+  cursor: ew-resize;
+  background: #fff;
+  position: absolute;
+  left: 20px;
+  top: 0;
+}
+.arrow {
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+}
