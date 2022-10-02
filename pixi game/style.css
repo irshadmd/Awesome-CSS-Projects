@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Orbito";
+  font-weight: normal;
+  src: url("../fonts/static/Orbitron-Regular.ttf") format("truetype");
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Orbito, Verdana;
+  font-size: 20px;
+  color: #456268;
+  background-color: #fcf8ec;
+  text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+div#main {
+  display: inline-block;
+  width: 95%;
+  max-width: 600px;
+}
+div#main div#score {
+  font-family: Orbito;
+  font-size: 18px;
+  text-align: right;
+  margin-top: 20px;
+}
+div#main div#score span {
+  font-size: 24px;
+}
+div#main div#canvas canvas {
+  position: relative;
+}
+div#main div#canvas canvas.left {
+  transform: translate3d(-2px, 0px, 0px);
+}
+div#main div#canvas canvas.right {
+  transform: translate3d(2px, 0px, 0px);
+}
+div#main div#canvas canvas.up {
+  transform: translate3d(0px, -2px, 0px);
+}
+div#main div#canvas canvas.down {
+  transform: translate3d(0px, 2px, 0px);
+}
+div#main div#controls {
+  font-family: Orbito;
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 28px;
+  margin: 10px;
+}
+div#main div#controls b {
+  color: #79a3b1;
+}
+
+div.button {
+  box-shadow: 4px 5px 0px #1d1d1d;
+  border: 2px solid #1d1d1b;
+  background-color: #ffcc00;
+}
+div.button.clicked {
+  transform: translate3d(calc(-110% + 5px), 5px, 0);
+  box-shadow: 0px 0px 0px #1d1d1b;
+}
+
+.startbutton {
+  color: darkslategray;
+  text-decoration: none;
+}
