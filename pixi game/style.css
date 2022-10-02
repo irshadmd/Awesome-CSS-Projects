@@ -13,14 +13,11 @@ html {
   overflow: hidden;
   font-family: Orbito, Verdana;
   font-size: 20px;
-  color: #000000;
-  background-color: #ffffff;
+  color: #456268;
+  background-color: #fcf8ec;
   text-align: center;
 }
 
-footer {
-  text-align-last: center;
-}
 *,
 *:before,
 *:after {
@@ -64,7 +61,7 @@ div#main div#controls {
   margin: 10px;
 }
 div#main div#controls b {
-  color: #e9e325;
+  color: #79a3b1;
 }
 
 div.button {
@@ -78,6 +75,6 @@ div.button.clicked {
 }
 
 .startbutton {
-  color: #ee1717;
+  color: darkslategray;
   text-decoration: none;
 }
