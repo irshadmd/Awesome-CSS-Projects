@@ -28,17 +28,17 @@
         }
 
         button {
-            border-radius: 5px;
+            border-radius: 20px;
             font-size: 40px;
             background-color: darkgrey;
-            width: 150px;
+            width: 90px;
             height: 90px;
-            margin: 6px;
+            margin: 12px;
         }
 
         button:hover {
-            box-shadow: 3px 3px red;
-            background-color: #244624;
+            box-shadow: 3px 3px rgb(18, 16, 16);
+            background-color: #2c3348;
             color: white;
         }
 
@@ -49,13 +49,12 @@
             border-radius: 0px;
             display: inline-block;
             box-shadow: 5px 5px 5px 5px gainsboro;
-
         }
 
         h1 {
-            font-size: 35px;
-            color: black;
-            text-shadow: 3px 3px royalblue;
+            font-size: 50px;
+            color: rgb(8, 8, 72);
+            text-shadow: 3px 3px rgb(195, 195, 203);
         }
     </style>
     <title>Calculator</title>
@@ -72,6 +71,12 @@
                     <td><button>(</button></td>
                     <td><button>)</button></td>
                     <td><button>C</button></td>
+                    <td><button>log</button></td>
+                </tr>
+                <tr>
+                    <td><button>sin</button></td>
+                    <td><button>cos</button></td>
+                    <td><button>tan</button></td>
                     <td><button>%</button></td>
                 </tr>
                 <tr>
@@ -107,26 +112,96 @@
     let screen = document.getElementById('screen');
     buttons = document.querySelectorAll('button');
     let screenValue = '';
+    flagLog = 0;
+    flagSin = 0;
+    flagCos = 0;
+    flagTan = 0;
+    flagDigit = 0;
+    value = '';
     for (item of buttons) {
         item.addEventListener('click', (e) => {
             buttonText = e.target.innerText;
             console.log('Button text is ', buttonText);
-            if (buttonText == 'X') {
-                buttonText = '*';
-                screenValue += buttonText;
-                screen.value = screenValue;
-            }
-            else if (buttonText == 'C') {
+            if (buttonText == 'C') {
                 screenValue = "";
                 screen.value = screenValue;
+                flagLog = 0; flagSin = 0; flagCos = 0; flagTan = 0;
+                flagDigit = 0;
             }
-            else if (buttonText == '=') {
-                screen.value = eval(screenValue);
+            else if (flagDigit == 1) {
+                if (buttonText != '=' && buttonText != ')') {
+                    screenValue += buttonText;
+                    value += buttonText;
+                    screen.value = screenValue;
+                }
+                else if (buttonText == ')') {
+                    screenValue += ')';
+                    screen.value = screenValue;
+                }
+                else {
+                    flagDigit = 0;
+                    if (flagLog == 1)
+                        screenValue = Math.log(value);
+                    else if (flagSin == 1)
+                        screenValue = Math.sin(value);
+                    else if (flagCos == 1)
+                        screenValue = Math.cos(value);
+                    else if (flagTan == 1)
+                        screenValue = Math.tan(value);
+                    screen.value = screenValue;
+                    value = '';
+                }
             }
             else {
-                screenValue += buttonText;
-                screen.value = screenValue;
+                if (buttonText == 'X') {
+                    buttonText = '*';
+                    screenValue += buttonText;
+                    screen.value = screenValue;
+                }
+                else if (buttonText == 'C') {
+                    screenValue = "";
+                    screen.value = screenValue;
+                }
+                else if (buttonText == '=') {
+                    screenValue = eval(screenValue);
+                    screen.value = screenValue;
+                    flagLog = 0; flagSin = 0; flagCos = 0; flagTan = 0;
+                }
+                else if (buttonText == 'log') {
+                    screenValue = '';
+                    screen.value = "log(";
+                    screenValue += "log(";
+                    flagDigit = 1;
+                    flagLog = 1;
+                }
+                else if (buttonText == 'sin') {
+                    screenValue = '';
+                    screen.value = 'sin(';
+                    screenValue += 'sin(';
+                    flagDigit = 1;
+                    flagSin = 1;
+                }
+                else if (buttonText == 'cos') {
+                    screenValue = '';
+                    screen.value = 'cos(';
+                    screenValue += 'cos(';
+                    flagDigit = 1;
+                    flagCos = 1;
+                }
+                else if (buttonText == 'tan') {
+                    screenValue = '';
+                    screen.value = 'tan(';
+                    screenValue += 'tan(';
+                    flagDigit = 1;
+                    flagTan = 1;
+                }
+                else {
+                    screenValue += buttonText;
+                    screen.value = screenValue;
+                }
+
             }
+
 
         })
     }
