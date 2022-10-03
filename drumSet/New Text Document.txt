@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>The Drum Kit</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<h1>The Drum Kit</h1>
+<div class="all">
+	<button class="w button">w</button>
+	<button class="a button">a</button>
+	<button class="s button">s</button>
+	<button class="d button">d</button>
+	<button class="j button">j</button>
+	<button class="k button">k</button>
+	<button class="l button">l</button>
+</div>
+
+<script src="drumKit.js"></script>
+</body>
+
+</html>
