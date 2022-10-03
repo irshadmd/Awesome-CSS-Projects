@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z3RO Figure GYM</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* CSS Reset */
+    body {
+      font-family: "Dancing Script", cursive;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url("images/gym_bg.jpg");
+    }
+    .left img {
+      width: 58px;
+      filter: invert(100%);
+    }
+    .left {
+      display: inline-block;
+      position: absolute;
+      left: 30px;
+      font-size: 17px;
+      top: 20px;
+      width: 120px;
+      line-height: 18px;
+      height: 90px;
+      /* border: 2px solid pink; */
+      text-align: center;
+    }
+    .mid {
+      display: inline-block;
+      width: 45%;
+      height: 10%;
+      margin: 18px 31%;
+      /* border: 2px solid pink; */
+    }
+    .right {
+      position: absolute;
+      right: 12px;
+      top: 30px;
+      /* border: 2px solid pink; */
+      display: inline-block;
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 27px;
+    }
+    .navbar li a {
+      text-decoration: none;
+      color: white;
+      padding: 16px 16px;
+    }
+    .navbar li a:hover {
+      text-decoration: underline;
+      color: grey;
+      padding: 16px 16px;
+    }
+    .btn {
+      font-family: "Dancing Script", cursive;
+      margin: 0px 12px;
+      background-color: black;
+      color: white;
+      padding: 4px 14px;
+      border: 3px solid grey;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: rgb(77, 77, 77);
+      font-size: 19px;
+    }
+    .container {
+      border: 2px solid white;
+      margin: 40px auto;
+      padding: 20px 20px;
+      width: 50%;
+      border-radius: 15px;
+    }
+    .form-group input {
+      display: block;
+      text-align: center;
+      border: 2px solid black;
+      width: 300px;
+      padding: 6px;
+      font-size: 20px;
+      border-radius: 10px;
+      margin: 10px auto;
+      font-family: "Roboto Mono", monospace;
+    }
+    .container button {
+      display: block;
+      width: 23%;
+      margin: 20px auto;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <!-- left section of header is for logo -->
+      <div class="left">
+        <img src="images/gym_logo.png" alt="GYM_Logo" />
+        <div>Z3RO_O's&nbspGYM</div>
+      </div>
+      <!-- mid section is for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+        </ul>
+      </div>
+      <!-- right section for other buttons -->
+      <div class="right">
+        <button class="btn">Call Us Now</button
+        ><button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1 style="text-align: center">JOIN the Best Gym of Pune</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Age" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Locality" />
+        </div>
+        <button class="btn" style="position: center">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
