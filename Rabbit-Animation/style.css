@@ -1,0 +1,319 @@
+ * {
+        padding: 0;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+      }
+      body {
+        background-color: #e25a61;
+      }
+      .wrapper {
+        position: absolute;
+        width: 31em;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+      }
+      .container {
+        position: relative;
+        height: 25em;
+        width: 100%;
+      }
+      a {
+        background-color: #ffffff;
+        display: block;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5em;
+        padding: 1em 0;
+        border-radius: 0.3em;
+        color: #101010;
+        text-decoration: none;
+      }
+      .bunny-body {
+        background-color: #d7dfe7;
+        height: 8.12em;
+        width: 15.62em;
+        border-radius: 8.12em 8.12em 0 0;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 11.25em;
+        background: -o-radial-gradient(
+          0 50%,
+          circle,
+          #b5becd,
+          #b5becd 60%,
+          #d7dfe7 61%
+        );
+        background: radial-gradient(
+          circle at 0 50%,
+          #b5becd,
+          #b5becd 60%,
+          #d7dfe7 61%
+        );
+        z-index: 1;
+      }
+      .tail {
+        position: absolute;
+        background-color: #ffffff;
+        height: 3.4em;
+        width: 3.4em;
+        border-radius: 50%;
+        right: 5.93em;
+        top: 15.93em;
+      }
+      .face-container {
+        -webkit-transform: rotate(-10deg);
+            -ms-transform: rotate(-10deg);
+                transform: rotate(-10deg);
+        -webkit-animation: nod 5s ease-in-out infinite;
+                animation: nod 5s ease-in-out infinite;
+        -webkit-transform-origin: 0 100%;
+            -ms-transform-origin: 0 100%;
+                transform-origin: 0 100%;
+      }
+      @-webkit-keyframes nod {
+        50% {
+          -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+        }
+      }
+      @keyframes nod {
+        50% {
+          -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+        }
+      }
+      .bunny-face {
+        background-color: #d7dfe7;
+        height: 5.93em;
+        width: 9.3em;
+        border-radius: 4.68em 4.68em 0 0;
+        position: absolute;
+        left: -1.25em;
+        top: -1.87em;
+      }
+      .bunny-face:before {
+        position: absolute;
+        content: "";
+        background-color: #d7dfe7;
+        width: 11.25em;
+        height: 3.75em;
+        border-radius: 4.37em;
+        left: -0.93em;
+        top: 5.62em;
+      }
+      .ear {
+        background-color: #d7dfe7;
+        height: 8.12em;
+        width: 2.18em;
+        position: relative;
+        top: -4.06em;
+        left: 0.31em;
+        border-radius: 1.25em 1.25em 0 0;
+        -webkit-box-shadow: 6.56em 0 0 #d7dfe7;
+                box-shadow: 6.56em 0 0 #d7dfe7;
+        z-index: -1;
+      }
+      .ear:before {
+        position: absolute;
+        content: "";
+        background-color: #cd92b4;
+        height: 7.31em;
+        width: 1.37em;
+        top: 0.37em;
+        left: 0.37em;
+        border-radius: 1.56em;
+        -webkit-box-shadow: 6.56em 0 0 #cd92b4;
+                box-shadow: 6.56em 0 0 #cd92b4;
+      }
+      .eye-l,
+      .eye-r {
+        position: absolute;
+        height: 0.81em;
+        width: 1.56em;
+        background-color: #101010;
+        border-radius: 0 0 1.87em 1.87em;
+        top: 3.75em;
+      }
+      .eye-l {
+        left: 1.56em;
+      }
+      .eye-r {
+        right: 1.56em;
+      }
+      .eye-l:before,
+      .eye-r:before {
+        content: "";
+        position: absolute;
+        background-color: #d7dfe7;
+        height: 0.75em;
+        width: 1.12em;
+        border-radius: 0 0 0.9em 0.9em;
+        left: 0.23em;
+        bottom: 0.25em;
+      }
+      .mouth {
+        background-color: #ffffff;
+        position: absolute;
+        height: 1.87em;
+        width: 2.5em;
+        border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+        top: 4.06em;
+        margin: auto;
+        left: 0;
+        right: 0;
+      }
+      .mouth:before {
+        position: absolute;
+        content: "";
+        height: 0.93em;
+        width: 1.25em;
+        border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+        background-color: #101010;
+        margin: auto;
+        left: 0;
+        right: 0;
+      }
+      .hand-l,
+      .hand-r {
+        position: absolute;
+        height: 2.5em;
+        width: 5em;
+        bottom: 0;
+        border-radius: 0.93em 0.93em 0 0;
+      }
+      .hand-l {
+        left: -3.12em;
+        background-color: #b5becd;
+      }
+      .hand-r {
+        left: 5em;
+        background-color: #ffffff;
+      }
+      .hand-l:before,
+      .hand-r:before {
+        position: absolute;
+        content: "";
+        height: 2em;
+        width: 3.12em;
+        bottom: 0;
+        border-radius: 0.62em 0.62em 0 0;
+      }
+      .hand-l:before {
+        background-color: #ffffff;
+        right: -1.56em;
+      }
+      .hand-r:before {
+        background-color: #b5becd;
+        left: -1.56em;
+      }
+      .carrot {
+        position: absolute;
+        background-color: #e78f1d;
+        width: 7.5em;
+        height: 2.5em;
+        border-radius: 25% 65% 65% 25% / 50% 50% 50% 50%;
+        -webkit-transform: rotate(15deg);
+            -ms-transform: rotate(15deg);
+                transform: rotate(15deg);
+        left: -4.37em;
+        bottom: 0.62em;
+      }
+      .leaf,
+      .leaf:before {
+        position: absolute;
+        height: 2.5em;
+        width: 2.5em;
+        border-radius: 2.5em 0;
+      }
+      .leaf {
+        background-color: #c9cf55;
+        -webkit-transform: rotate(-40deg);
+            -ms-transform: rotate(-40deg);
+                transform: rotate(-40deg);
+        bottom: 2.5em;
+        left: -5em;
+      }
+      .leaf:before {
+        content: "";
+        background-color: #9eb42e;
+        -webkit-transform: rotate(-80deg);
+            -ms-transform: rotate(-80deg);
+                transform: rotate(-80deg);
+        bottom: 0;
+        left: -1.25em;
+      }
+      .container span {
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        font-size: 2em;
+        color: #4f1f22;
+        position: absolute;
+        -webkit-animation: snore 9s infinite linear forwards;
+                animation: snore 9s infinite linear forwards;
+        -webkit-transform: rotate(10deg);
+            -ms-transform: rotate(10deg);
+                transform: rotate(10deg);
+      }
+      @-webkit-keyframes snore {
+        30% {
+          -webkit-transform: rotate(10deg) translateY(0);
+                  transform: rotate(10deg) translateY(0);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: rotate(10deg) translateY(-7em);
+                  transform: rotate(10deg) translateY(-7em);
+          opacity: 0.2;
+        }
+      }
+      @keyframes snore {
+        30% {
+          -webkit-transform: rotate(10deg) translateY(0);
+                  transform: rotate(10deg) translateY(0);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: rotate(10deg) translateY(-7em);
+                  transform: rotate(10deg) translateY(-7em);
+          opacity: 0.2;
+        }
+      }
+      .container .z-1 {
+        top: 5.5em;
+        left: 4.5em;
+        -webkit-animation-delay: 7s;
+                animation-delay: 7s;
+      }
+      .container .z-2 {
+        top: 7em;
+        left: 3.5em;
+        -webkit-animation-delay: 1s;
+                animation-delay: 1s;
+      }
+      .container .z-3 {
+        top: 5em;
+        left: 6em;
+      }
+      .shadow {
+        background-color: #d34b58;
+        width: 25em;
+        height: 0.5em;
+        border-radius: 0.31em;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 19.37em;
+      }
+
+      @media screen and (max-width: 500px) {
+        .wrapper {
+          font-size: 10px;
+        }
+      }
