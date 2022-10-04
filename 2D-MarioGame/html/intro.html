@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PLAY</title>
+
+    <style type="text/css">
+      body {
+        background-image: url("../assets/images/bg.jpg");
+      }
+
+      .headd {
+        margin-left: 610px;
+        font-family: Bangers;
+        font-size: 2em;
+        position: absolute;
+        margin-top: 50px;
+        animation-iteration-count: infinite;
+        animation-name: txt;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        text-decoration: none;
+        font-weight: bolder;
+      }
+
+      @keyframes txt {
+        0% {
+          font-size: 2em;
+        }
+
+        100% {
+          font-size: 4em;
+          margin-left: 560px;
+        }
+      }
+
+      h2 {
+        font-size: 35px;
+        margin-left: 30px;
+        margin-top: 170px;
+        position: absolute;
+      }
+
+      /*---------------------------------------------------mario----------------------------------------------------------*/
+
+      #gif {
+        width: 170px;
+        position: absolute;
+        margin-top: 360px;
+        margin-left: 105px;
+      }
+
+      /*---------------------------------------------------sonic----------------------------------------------------------*/
+
+      #gif2 {
+        width: 140px;
+        position: absolute;
+        margin-top: 355px;
+        margin-left: 425px;
+      }
+
+      /*---------------------------------------------------pokemon----------------------------------------------------------*/
+
+      #gif3 {
+        width: 180px;
+        position: absolute;
+        margin-top: 400px;
+        margin-left: 695px;
+      }
+
+      /*---------------------------------------------------boy----------------------------------------------------------*/
+
+      #gif4 {
+        width: 250px;
+        position: absolute;
+        margin-top: 320px;
+        margin-left: 940px;
+      }
+
+      ul {
+        list-style-type: none;
+
+        position: absolute;
+      }
+
+      li {
+        display: inline;
+        position: absolute;
+        margin-top: 530px;
+        font-family: Bangers;
+        font-size: 1.5em;
+      }
+
+      .mari {
+        margin-left: 115px;
+      }
+
+      .son {
+        margin-left: 420px;
+      }
+
+      .pkc {
+        margin-left: 705px;
+      }
+
+      .bruh {
+        margin-left: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="headd" href="#" style="color: crimson" onclick="clk();">PLAY</a>
+
+    <h2>Choose Your Player:</h2>
+
+    <a href="mario.html" target="_blank"> <img id="gif" src="../assets/gifs/mar.gif" /> </a>
+    <a href="sonic.html" target="_blank">
+      <img id="gif2" src="../assets/gifs/giphy (1).gif" />
+    </a>
+    <a href="pokemon.html" target="_blank">
+      <img id="gif3" src="../assets/gifs/giphy (5).gif" />
+    </a>
+    <a href="boy.html" target="_blank">
+      <img id="gif4" src="../assets/gifs/giphy (6).gif" />
+    </a>
+
+    <ul>
+      <li class="mari" style="color: white">MARIO</li>
+      <li class="son" style="color: white">SONIC</li>
+      <li class="pkc" style="color: white">PIKACHU</li>
+      <li class="bruh" style="color: white">BRO!</li>
+    </ul>
+
+    <script type="text/javascript">
+      function clk() {
+        alert("First Choose Your Player");
+      }
+    </script>
+  </body>
+</html>
