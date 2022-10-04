@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Bangers"
+      rel="stylesheet"
+    />
+    <title>Run Mario</title>    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .rm {
+        background-image: url("https://i.pinimg.com/originals/b8/25/3c/b8253c9cccc6b62e92ad0bb2c2f40f92.png");
+        width: 100%;
+        height: 100vh;
+        background-size: 100% 100%;
+        position: relative;
+      }
+
+      /*---------------------------------------------------mario----------------------------------------------------------*/
+
+      #gif {
+        width: 150px;
+        position: absolute;
+        margin-top: 420px;
+        animation-name: mario;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+      }
+
+      @keyframes mario {
+        0% {
+          margin-left: 1%;
+        }
+        100% {
+          margin-left: 89%;
+        }
+      }
+
+      /*---------------------------------------------------sonic----------------------------------------------------------*/
+
+      #gif2 {
+        width: 125px;
+        position: absolute;
+        margin-top: 420px;
+        animation-name: sonic;
+        animation-iteration-count: infinite;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+      }
+
+      @keyframes sonic {
+        0% {
+          margin-left: 0%;
+        }
+        100% {
+          margin-left: 89%;
+        }
+      }
+
+      /*---------------------------------------------------pokemon----------------------------------------------------------*/
+
+      #gif3 {
+        width: 160px;
+        position: absolute;
+        margin-top: 455px;
+        animation-name: pokemon;
+        animation-iteration-count: infinite;
+        animation-duration: 6.5s;
+        animation-timing-function: linear;
+      }
+
+      @keyframes pokemon {
+        0% {
+          margin-left: 2%;
+        }
+        100% {
+          margin-left: 88%;
+        }
+      }
+
+      /*---------------------------------------------------boy----------------------------------------------------------*/
+
+      #gif4 {
+        width: 230px;
+        position: absolute;
+        margin-top: 380px;
+        animation-name: boy;
+        animation-iteration-count: infinite;
+        animation-duration: 5.5s;
+        animation-timing-function: linear;
+      }
+
+      @keyframes boy {
+        0% {
+          margin-left: 3%;
+        }
+        100% {
+          margin-left: 83%;
+        }
+      }
+
+      /*----------------------------------------heading---------------------------------------------------------*/
+      h2 {
+        margin-left: 540px;
+        font-family: Bangers;
+        font-size: 2em;
+        position: absolute;
+        margin-top: 40px;
+        animation-iteration-count: infinite;
+        animation-name: txt;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+      }
+
+      @keyframes txt {
+        0% {
+          font-size: 2em;
+        }
+
+        100% {
+          font-size: 4em;
+          margin-left: 470px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rm">
+      <div class="runmario">
+        <h2>Run Mario Run!</h2>
+        <img id="gif" src="../assets/gifs/mar.gif" />
+        <img id="gif2" src="../assets/gifs/giphy (1).gif" />
+        <img id="gif3" src="../assets/gifs/giphy (5).gif" />
+        <img id="gif4" src="../assets/gifs/giphy (6).gif" />
+      </div>
+    </div>
+  </body>
+</html>
