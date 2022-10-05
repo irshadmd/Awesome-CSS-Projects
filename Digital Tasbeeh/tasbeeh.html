@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tasbeeh.css">
+    <title>Document</title>
+</head>
+<body>
+    
+  <!-- tasbeeh counter html start here -->
+        <div class="item2 ">
+            <div class="Counter_head">
+            <h1 id="heading">Digital Tasbeeh Counter</h1>
+            <img src="tasbeeh.jfif" alt="Tasbeeh.jpg">
+        </div>
+        <br>
+        <!-- <hr> -->
+        <div class="tasbeeh">
+            <!-- inner-area -->
+                <div class="inner-area">
+                    <div class="input" id="input">0</div>
+                    <div class="increment-decrement">
+                        <button id="decrement" onclick="button.play()">-</button>
+                        <button id="increment" onclick="button.play()">+</button>
+                    </div>
+                       <button id="reset" onclick="button.play()">RESET</button>
+                </div>
+                <!-- savearea -->
+                <div class="save">
+                    <h1>If you want to save this Counter and want to continue it later :</h1>
+                    <h1 style="margin-top: 10px;">Enter the name of the Counter:</h1>
+                    <input type="text" id="name">
+                    <br>
+                    <button id="save">SAVE</button>
+                </div>
+        </div>
+          <!-- saved-counters -->
+        <div class="saved">
+            <h1>Saved Counters:</h1>
+            <hr>
+            <input type="text" id="search" placeholder="search by name">
+            <button id="searchBTn">Search</button>
+            <table class="table">
+                <tr>
+                    <th>Serial #</th>
+                    <th>Name</th>
+                    <th>Total Count</th>
+                    <th>Option</th>
+                </tr>
+            </table>
+            <div id="showCount"></div>
+            
+        </div>
+
+       
+        <div class="item7 footer">
+            <img src="footer.PNG" alt="Footer">
+            <h3>Authorized by Muhib Arshad</h3>
+            <h3>https://madeRamadanSpecial.netlify.app/</h2>
+            <h3>Follow me at <a href="https://github.com/muhib7353">@muhib7353</a></h3>
+        </div>
+    </div>
+    <script src="responsiveNavbar.js"></script>
+    <script src="tasbeeh.js"></script>
+</body>
+</html>
