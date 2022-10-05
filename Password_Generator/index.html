@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PassGen-Generate strong passwords</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <header class="header">
+        <h1>PassGen-Random Password Generator</h1>
+        <p>Randomly generate strong and secure passwords of desired length</p>
+      </header>
+
+      <div class="password-container">
+        <form id="Password-form">
+          <input id="generated-pass" value="" type="text" spellcheck="false" />
+        </form>
+      </div>
+
+      <div class="customize-pass">
+        <h3>Choose Password Length:</h3>
+        <input
+          type="number"
+          min="8"
+          max="50"
+          value="8"
+          id="length"
+          onchange="generatePassword()"
+        />
+      </div>
+
+      <div class="btn-container">
+        <button class="generate-btn" onclick="generatePassword()">
+          Generate
+        </button>
+        <button class="copy-btn" id="copy" onclick="copyPassword()">
+          Copy
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
