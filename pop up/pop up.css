@@ -1,0 +1,86 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+  
+}
+.popup{
+    border-style: solid;
+    background-color: #ffffff;
+    border-color: #f58585;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+.title1{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    
+  }
+  .title1::before{
+    content: "";
+    position: absolute;
+    left: 70px;
+    bottom: 0;
+    height: 3px;
+    width: 230px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+
+  .title2{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    
+  }
+  .title2::before{
+    content: "";
+    position: absolute;
+    left: 70px;
+    bottom: 0;
+    height: 3px;
+    width: 230px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #f58585, #9b59b6);
+  }
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #ffa7a7;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+}
