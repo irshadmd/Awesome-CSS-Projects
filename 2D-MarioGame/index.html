@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PLAY</title>
+
+    <style type="text/css">
+      body {
+        background-image: url("./assets/images/bg.jpg");
+      }
+
+      .headd {
+        margin-left: 610px;
+        font-family: Bangers;
+        font-size: 2em;
+        position: absolute;
+        margin-top: 50px;
+        animation-iteration-count: infinite;
+        animation-name: txt;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        text-decoration: none;
+        font-weight: bolder;
+      }
+
+      @keyframes txt {
+        0% {
+          font-size: 2em;
+        }
+
+        100% {
+          font-size: 4em;
+          margin-left: 560px;
+        }
+      }
+
+      h2 {
+        font-size: 35px;
+        margin-left: 30px;
+        margin-top: 170px;
+        position: absolute;
+      }
+
+      /*---------------------------------------------------mario----------------------------------------------------------*/
+
+      #gif {
+        width: 115px;
+        position: absolute;
+        margin-top: 415px;
+        margin-left: 240px;
+      }
+
+      /*---------------------------------------------------sonic----------------------------------------------------------*/
+
+      #gif2 {
+        width: 100px;
+        position: absolute;
+        margin-top: 410px;
+        margin-left: 286px;
+      }
+
+      /*---------------------------------------------------pokemon----------------------------------------------------------*/
+
+      #gif3 {
+        width: 120px;
+        position: absolute;
+        margin-top: 440px;
+        margin-left: 292px;
+      }
+
+      /*---------------------------------------------------boy----------------------------------------------------------*/
+
+      #gif4 {
+        width: 180px;
+        position: absolute;
+        margin-top: 375px;
+        margin-left: 300px;
+      }
+
+      /*---------------------------------------------------wolverine----------------------------------------------------------*/
+
+      #gif6 {
+        width: 190px;
+        position: absolute;
+        margin-top: 400px;
+        margin-left: 745px;
+      }
+
+      ul {
+        list-style-type: none;
+
+        position: absolute;
+      }
+
+      li {
+        display: inline;
+        position: absolute;
+        margin-top: 530px;
+        font-family: Bangers;
+        font-size: 1.5em;
+      }
+
+      .mari {
+        margin-left: 245px;
+        text-align: center;
+      }
+
+      .son {
+        margin-left: 420px;
+      }
+
+      .pkc {
+        margin-left: 760px;
+        text-align: center;
+      }
+
+      .bruh {
+        margin-left: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="headd" href="#" style="color: crimson" onclick="clk();">PLAY</a>
+
+    <h2>Choose Your Game Mode:</h2>
+
+    <div id="di_v">
+      <a href="./html/intro.html">
+        <img id="gif" src="./assets/gifs/mar.gif" />
+        <img id="gif2" src="./assets/gifs/giphy (1).gif" />
+        <img id="gif3" src="./assets/gifs/giphy (5).gif" />
+        <img id="gif4" src="./assets/gifs/giphy (6).gif" />
+      </a>
+
+      <a href="./html/intro2.html">
+        <img id="gif6" src="./assets/gifs/giphy (3).gif" />
+      </a>
+    </div>
+
+    <ul>
+      <a href="./html/intro.html"
+        ><li class="mari" style="color: white">OLYMPIC RACE</li></a
+      >
+      <li class="son" style="color: white"></li>
+      <a href="./html/intro2.html"
+        ><li class="pkc" style="color: white">DEATH RACE</li></a
+      >
+      <li class="bruh" style="color: white"></li>
+    </ul>
+
+    <script type="text/javascript">
+      function clk() {
+        alert("First Choose Your Game Mode");
+      }
+    </script>
+  </body>
+</html>

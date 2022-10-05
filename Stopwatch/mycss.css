@@ -1,0 +1,119 @@
+.tbc{
+	position : absolute;
+	top : 100px;
+	left : 510px;
+	font-size : 65px;  
+	font-family : 'Impact';
+	color : rgb(77 , 77 , 255);
+}
+
+.set_button{
+	position : absolute; 
+	top : 175px;
+	left : 30px;
+	height : 30px;
+	width : 120px; 
+}
+
+.sw_button{
+	position : absolute; 
+	top : 207px;
+	left : 30px;
+	height : 30px;
+	width : 120px; 
+}
+
+.st{
+   	position : absolute; 
+	top : 207px;
+	left : 153px;
+	height : 30px;
+	width : 60px;
+
+}
+
+.sp{
+	position : absolute; 
+	top : 207px;
+	left : 215px;
+	height : 30px;
+	width : 60px;
+
+}
+
+.done_button{
+	position : absolute; 
+	top : 175px;
+	left : 153px;
+	height : 30px;
+	width : 60px; 
+
+}
+
+.p1{
+	position : absolute ;
+	top : 270px;
+	left : 532px;
+
+}
+
+.p2{
+
+	position : absolute ;
+	top : 270px;
+	left : 625px;
+
+}
+
+.p3{
+
+	position : absolute ;
+	top : 270px;
+	left : 718px;
+
+}
+
+.p4{
+	position : absolute ;
+	top : 293px;
+	left : 532px;
+	width: 24px;
+
+}
+
+.p5{
+	position : absolute ;
+	top : 293px;
+	left : 625px;
+	width: 24px;
+
+}
+
+.p6{
+	position : absolute ;
+	top : 293px;
+	left : 718px;
+	width: 24px;
+
+}
+
+
+
+
+.date{
+	position : absolute;
+	top : 168px;
+	left : 817px;
+	font-size : 30px;  
+	font-family : 'Impact';
+	color : rgb(77 , 177 , 255);
+
+}
+
+.vL{
+	position : absolute;
+	top : 170px;
+	left: 795px;  
+	border-left : 1px solid gray;
+    height : 60px;
+}
