@@ -5,3 +5,4 @@ This project is a template for any startup which provides Human Psychology Podca
 - CSS
 - JS
 ## Demo
+<img src="./demo/demo.gif">
