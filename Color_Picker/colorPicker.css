@@ -1,0 +1,58 @@
+h1{
+    color:white;
+    background-color: yellow;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding: 20px 0;
+    
+}
+body{
+    background-color:black;
+    font-family: Arial;
+
+}
+
+button{
+background-color: white;
+color:brown;
+font-weight:700;
+letter-spacing: 1px;
+font-size: inherit;
+transition: all 0.3s;
+height: 100%;
+border:none
+}
+button:hover{
+    background-color:red;
+    color:white;
+}
+
+.square{
+    background-color:black;
+    height:100px;
+    min-width:100px;
+    border-radius: 5px;
+    margin:2%;
+    padding: 2%;
+    
+    
+}
+.wrapper{
+    
+    max-width: 400px;
+    margin:0 auto;
+}
+.container{
+   
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+
+    
+}
+#stripe{
+    text-align:center;
+    padding:auto 0;
+    background-color:white
+}
