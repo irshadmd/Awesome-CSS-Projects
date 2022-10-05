@@ -1,0 +1,60 @@
+body {
+    background-color: rgba(212, 215, 223, 0.782);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    -webkit-border-radius: 125px;
+    border-radius: 20px;
+    background-color: rgba(212, 215, 223, 0, 782);
+    -webkit-box-shadow: 12px 12px 24px #9499a8, -12px -12px 24px #ffffff;
+    box-shadow: 12px 12px 24px #7a7c83, -12px -12px 24px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+
+.text {
+    background-color: rgba(212, 215, 223, 0.782);
+    height: 70%;
+    width: 70%;
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+
+.text::-webkit-scrollbar {
+    display: none;
+}
+
+.btn {
+    height: 40px;
+    width: 40px;
+    border: 0.01px solid grey;
+    border-radius: 60%;
+    -webkit-border-radius: 90px;
+    border: 90px;
+    background-color: rgba(212, 215, 223, 0.782);
+    -webkir-box-shadow: 8px 8px 19px #7579 84, -8px -8px 18px #ffffff;
+    box-shadow: 8px 8px 19px #7579 84, -8px -8px 18px #ffffff;
+}
+
+.fade {
+    background-color: rgba(184, 184 184, 0.636);
+    color: rgb (255, 255, 255);
+    box-shadow: 0px 0px 0px #595d68, -8px -8px 18px #f5f5f5b7;
+    border: 1px solid rgba(255, 0, 0, 0.598);
+}
+
+.backfade {
+    background-color: rgb(0, 0, 0);
+}

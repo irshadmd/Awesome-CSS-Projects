@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.pokedex {
+  padding: 1em;
+}
+
+.a-pokemon {
+  display: grid;
+  grid-template-columns: repeat(12, calc(100% / 12));
+}
+
+.a-pokemon * {
+  border: 0.1rem solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.a-pokemon-id {
+  background-color: lightblue;
+  grid-column: span 2;
+  font-size: 1.3rem;
+}
+
+.a-pokemon-name {
+  grid-column: span 5;
+  background-color: lightyellow;
+  font-size: 1.3rem;
+}
+
+.a-pokemon-type {
+  grid-column: span 5;
+  font-size: 1.3rem;
+}
+
+.a-pokemon-stat {
+  background-color: lightpink;
+  grid-column: span 3;
+}
+
+.a-pokemon-chinese {
+  grid-column: 1/5;
+}
+
+.a-pokemon-japanese {
+  grid-column: 5/8;
+}
+
+.a-pokemon-french {
+  grid-column: 8/-1;
+}
+
+.a-pokemon-chinese,
+.a-pokemon-french,
+.a-pokemon-japanese {
+  background-color: lightseagreen;
+}
