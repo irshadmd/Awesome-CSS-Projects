@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joystick</title>
+    <link rel="stylesheet" href="css files/style1.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <i class="fa-brands fa-xbox"></i>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Game Controllers</a></li>
+                    <li><a href="">VR Accessories</a></li>
+                    <li><a href="">Media Remotes</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
+        </div> <!-- end navbar -->
+
+        <div class="row">
+            <div class="col-1">
+                <h2>X-Box One<br/>Dualshock 4</h2>
+                <h3>Wireless Controller for X-Box and Windows</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>₹ 5,390</h4>
+                <button type="button">Buy Now <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <div class="col-2">
+                <img src="media/xbox-controller.png" alt="controller" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div> <!-- row end -->
+
+        <div class="social-links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
