@@ -1,0 +1,181 @@
+@font-face {
+    font-family: GintoNord;
+    src: url(AQCT.ttf);
+}
+.hero{
+    background-color: #484cec;
+    height: 650px;
+    background-image: url("./images/bg.svg");
+    
+}
+
+.top{
+    display: flex;
+}
+
+.logo{
+    margin-left: 150px;
+    margin-top: 10px;
+
+}
+
+.navbar{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 5px;
+}
+
+.loginbtn{
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    height: 35px;
+    width: 65px;
+    font-size: 12px;
+}
+
+.navlink{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: smaller;
+    
+}
+
+.navlink:hover{
+    text-decoration: underline;
+    color: white;
+    
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagine{
+    font-family: GintoNord;
+    font-weight: 900;
+    font-size: 60px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.pin{
+    width: 700px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.download{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dbtn{
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    width: 300px;
+    background-color: white;
+    font-size: medium;
+    margin-right: 5px;
+}
+
+.dbtn2{
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    width: 300px;
+    background-color: black;
+    font-size: medium;
+    color: white;
+    margin-left: 5px;
+}
+
+.cardcontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    gap: 100px;
+    align-content: center;
+}
+
+.text{
+
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 10px;
+    
+}
+
+.cardh{
+    font-family: GintoNord;
+}
+
+.ptext{
+    font-size: 20px;
+}
+
+.card2{
+    background-color: #f2f1f1;
+    height: 600px;
+}
+
+.conclude{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 200px;
+    background-color: #f2f1f1;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.context{
+    text-align: center;
+    width: 900px;
+    margin: auto;
+}
+
+.ch1{
+    font-family: GintoNord;
+    margin-top: 100px;
+}
+
+.cp1{
+    font-size: 20px;
+}
+
+.journey{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.jbtn{
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    width: 300px;
+    background-color: #484cec;
+    font-size: medium;
+    margin-right: 5px;
+    color: white;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
