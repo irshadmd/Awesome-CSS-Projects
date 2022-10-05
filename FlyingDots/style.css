@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #001f25;
+  overflow: hidden;
+}
+
+.dots {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.dots span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(calc(36deg * var(--i)));
+}
+
+.dots span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border: 2px solid #00efff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px #00efff, -10px -10px 0 #00efff, -10px -10px 5px #00efff,
+    10px 10px 0 #00efff, 10px 10px 5px #00efff, 10px -10px 0 #00efff,
+    10px -10px 5px #00efff, -10px 10px 0 #00efff, -10px 10px 5px #00efff;
+  transform-origin: 5px;
+  animation: animateDots 5s linear infinite;
+  animation-delay: calc(-0.25s * var(--i));
+  transition: 2s;
+}
+
+.dots:hover span::before {
+  transform-origin: 50px;
+  box-shadow: 0 0 10px #00efff, -100px -100px 0 #00efff,
+    -100px -100px 10px #00efff, 100px 100px 0 #00efff, 100px 100px 10px #00efff,
+    100px -100px 0 #00efff, 100px -100px 10px #00efff, -100px 100px 0 #00efff,
+    -100px 100px 10px #00efff;
+}
+
+@keyframes animateDots {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
