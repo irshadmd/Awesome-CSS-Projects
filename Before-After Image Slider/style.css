@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.before-after {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  min-height: 50vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.before-after .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.before-after .img.front-img {
+  z-index: 1;
+  /* Crop half of the front image */
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+}
+
+.slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SEPERATE THESE SELECTORS FOR CHROME AND FIREFOX, 
+OTHERWISE RANGE INPUT CUSTOM STYLES DON'T WORK */
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 7px;
+  min-height: 50vh;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #c2c2c2;
+  border-radius: 0;
+}
+
+.slider::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 7px;
+  min-height: 50vh;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #c2c2c2;
+  border-radius: 0;
+}
