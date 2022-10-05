@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,body {
+  background: #031321 ;
+  color: #fff;
+  font-family: sans-serif;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main_container {
+  width: 400px;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 40px #2196f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#birth_date_input,
+#age_container {
+  text-align: center;
+  margin: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#age_container {
+  margin: 2rem 1rem;
+  padding: .5rem 2rem;
+  border-radius: 5rem;
+  font-weight: bolder;
+  background: #031321;
+  box-shadow: 0 0 40px #2196f3;
+
+  font-size: 20px;
+  line-height: 40px;
+}
+input{
+    padding: .5rem 1rem;
+    color: #2196f3;
+    border-radius: 2rem;
+}
+
+#calculate {
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+  padding: .5rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  background: #fff;
+  border: none;
+  color: #2196f3;
+  font-weight: bold;
+}
+
+
+#calculate:active {
+  background: #403300;
+  padding-top: 10px;
+  height: 20px;
+  box-shadow: 0 5px #000 inset;
+}
+
+#age {
+  padding: 5px;
+  color: #2196f3;
+  /* background-color: #2196f3; */
+}
