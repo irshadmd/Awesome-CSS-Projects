@@ -1,0 +1,17 @@
+.converter{
+    text-align: center;
+}
+h2{
+    text-decoration: solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;
+}
+p{
+    font-size: 25px;
+}
+input{
+    padding: 10px;
+}
+body{
+    background-color: cadetblue;
+}
