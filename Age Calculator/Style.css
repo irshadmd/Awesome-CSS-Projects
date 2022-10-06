@@ -3,7 +3,7 @@
     padding:0;
     box-sizing:border-box;
 }
-
+/*for container designs*/
 .container{
     display:flex;
     width:600px;
