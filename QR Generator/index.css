@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: 'Manrope', sans-serif;
+	
+	background-color: #ffdba5;
+}
+
+.qr{
+    border: 2px solid ffdba5;
+   width: 410px;
+   border-radius: 7px;
+padding: 15px;
+height: 260px;
+transition: height 0.2s ease;
+background: white; 
+   
+
+}
+
+.container h2{
+	font-size: 30px;
+	text-align: center;
+	color: #1d096c;
+
+}
+
+.container p{
+	font-size: 15px;
+	text-align: center;
+	color: #1a0f6b;
+}
+
+.container input{
+	width:100%;
+		height: 40px;
+	border: 2px solid #160430;
+	outline: none;
+	color: #0b0a60;
+	font-size: 20px;
+
+}
+
+.form{
+	margin: 16px 20px;
+}
+
+.container button{
+
+	width:100%;
+	margin-top: 10px;
+	height: 40px;
+	color:white;
+	border: none;
+	background:  #363062;
+
+	cursor: pointer;
+	
+
+}
+
+
+.qr .image{
+	display: flex;
+	justify-content: center;
+	opacity: 0;
+	align-items: center;
+	/* visibility: hidden; */
+    padding: 30px 0;
+	pointer-events: none;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+   
+
+}
+
+.qr.active{
+	height: 530px;
+}
+
+.qr.active .image{
+	opacity: 1;
+	pointer-events: auto;
+	transition:opacity 0.5s 0.5s ease;
+}
+
+.image img{
+
+	width: 200px;
+	height: 200px;
+
+}
+
