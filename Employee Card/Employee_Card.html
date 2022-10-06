@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,700;1,900&display=swap');
+
+html {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+* {
+  transition: all 0.5s ease-out;
+}
+
+  
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 50px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  
+  box-shadow: 0 20px 18px 0 rgba(19, 17, 17, 0.2);
+  max-width: 350px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  border-radius: 10px;
+}
+.card:hover {
+  opacity: 0.9;
+}
+
+img::hover {
+    opacity: 8px;
+    
+}
+
+.container {
+  padding: 0 16px;
+ 
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(73, 61, 61);
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: rgb(209, 29, 29);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(248, 236, 236);
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: grey;
+}
+</style>
+</head>
+<body>
+<center>
+<h2>Employee Card</h2></center>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YnVzaW5lc3NtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Faiz Aslam</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Yes, I am the Leader</p>
+        <p>faizabc@gmail.com</p>
+        <div style="margin: 24px 0;">
+            <a href="#"><i class="fa fa-dribbble"></i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="#"><i class="fa fa-facebook"></i></a> 
+          </div>
+        <p><button class="button">Contact</button></p>
+        <div style="margin: 24px 0;">
+            <a href="#"><i class="fa fa-dribbble"></i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="#"><i class="fa fa-facebook"></i></a> 
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://images.unsplash.com/flagged/photo-1567194974473-c866a1ba88d5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Hadeez Aslam</h2>
+        <p class="title">Art Director</p>
+        <p>I am the hacker of the team</p>
+        <p>hadeezaa@gmail.com</p>
+        <div style="margin: 24px 0;">
+            <a href="#"><i class="fa fa-dribbble"></i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="#"><i class="fa fa-facebook"></i></a> 
+          </div>
+        <p><button class="button">Contact</button></p>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://cdn.pixabay.com/photo/2019/05/24/10/59/business-man-4226005_1280.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Vikash</h2>
+        <p class="title">Designer</p>
+        <p>I am HacktoberFest Participant</p>
+        <p>Vikash@gmail.com</p>
+        <div style="margin: 24px 0;">          
+            <a href="#"><i class="fa fa-dribbble"></i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="#"><i class="fa fa-facebook"></i></a> 
+          </div>
+        <p><button class="button">Contact</button></p>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
