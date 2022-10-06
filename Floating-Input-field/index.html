@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Floating Input Field</title>
+   
+</head>
+<body>
+    <div class="body">
+       <div class="login">LOGIN</div> 
+    <div class="input-container"> 
+        <input type="text" class="username" id="text-input" autocomplete="off" placeholder="Enter your username" required />
+        <label class="label " for="username" >Username</label>
+    </div>
+    <div class="input-container2"> 
+        <input type="password" class="username" id="text-input" autocomplete="off" placeholder="Enter your Password" required />
+        <label class="label " for="username" >Password</label>
+    </div>
+    </div>
+   
+</body>
+<script>
+    document.querySelectorAll(".username").forEach((element)=>{
+        element.addEventListener("blur", (event)=>{
+            if(event.target.value!=""){
+                event.target.nextElementSibling.classList.add("filled");
+
+            }
+            else{
+                event.target.nextElementSibling.classList.remove("filled");
+            }
+        });
+    });
+</script>
+
+</html>
