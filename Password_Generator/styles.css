@@ -1,0 +1,92 @@
+body {
+    margin:0;
+    background-color:honeydew;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header{
+    margin-top:auto;
+    text-align:center;
+    font-size:1.3rem;
+}
+
+
+#container {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+}
+
+.password-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+    width:100%;
+}
+
+#generated-pass {
+    width: 550px;
+    height: 25px;
+    border-radius: 24px;
+    outline: none;
+    padding:20px;
+    font-size: 20px;
+}
+
+.generate-btn {
+    width:200px;
+    background-color:rgb(77, 189, 77);
+    border-radius:24px;
+    cursor:pointer;
+    margin-right:50px;
+}
+
+.copy-btn {
+    width:150px;
+    background-color:royalblue;
+    cursor:pointer;
+    font-size: 20px;
+    border:none;
+}
+
+.copy-btn, .generate-btn {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-align: center;
+    padding:15px;
+    border-radius: 24px;
+    font-size: 20px;
+    border:none;
+    color:white;
+}
+
+.customize-pass {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#length {
+    width: 100px;
+    padding:10px;
+    height: 10px;
+    border-radius:10px;
+    text-align:center;
+    font-size: 20px;
+}
+
+h3 {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.copy-btn:hover, .generate-btn:hover {
+    opacity: 0.8;
+}
+
+
