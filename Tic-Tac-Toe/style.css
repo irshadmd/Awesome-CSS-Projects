@@ -1,0 +1,37 @@
+input{
+    height: 55px;
+    width: 95px;
+    background-color: orchid;
+    box-shadow: rgb(223, 31, 213);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+   
+
+}
+button{
+    height: 55px;
+    width: 115px;
+    border-radius: 20px;
+    background-color: turquoise;
+    font-weight: bolder;
+    font-size: 20px;
+    
+   
+}
+body{
+   background-image: url("tic.jpg");
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+
+}
+h2,h3{
+    color: snow;
+    text-shadow: lightsalmon;
+    text-decoration: thistle;
+    
+}
+
+
