@@ -1,0 +1,70 @@
+* {
+    font-size: 1.1rem;
+    font-family: 'Architects Daughter', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+.container1 h1 {
+    color: blanchedalmond;
+    font-size: 2rem;
+}
+
+body {
+    background: url(images/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main-container {
+    width: 95%;
+    margin: auto;
+}
+
+.container1 {
+    margin-top: 1.5rem;
+    margin-left: 5%;
+}
+
+.container2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.container3 {
+    display: none;
+    position: absolute;
+    top: 26%;
+    left: 40%;
+}
+
+textarea {
+    border-radius: 1rem;
+    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+    outline: none;
+    border: none;
+    width: 275px;
+    height: 275px;
+    padding: 40px 25px 25px 25px;
+}
+
+svg {
+    color: gray;
+}
+
+#check-icon {
+    color: green;
+    position: absolute;
+    right: 17%;
+    top: 4%;
+    /* pointer: cursor; */
+}
+
+#x-icon {
+    color: red;
+    position: absolute;
+    right: 5%;
+    top: 4%;
+}
