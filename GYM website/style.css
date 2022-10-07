@@ -1,0 +1,979 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "popins",sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.big{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x:hidden;
+}
+div.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100vw;
+    padding: 1rem 6.5rem;
+    background:  #222;
+    z-index: 100000;
+    padding-right: 100px;
+}
+
+.nav h2{
+    color: white;
+    font-size: 1.7rem;
+}
+
+#items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#items li{
+    list-style: none;
+    padding-right: 50px;
+}
+
+#items li a{
+    font-size: 1rem;
+    text-decoration:none;
+    text-transform: uppercase;
+    color: white;
+}
+
+/****************** hover ********************/
+#items li a:hover,.social i:hover{
+    color: #ff5733;
+    cursor: pointer;
+}
+
+.social i{
+    color: white;
+    padding-right: 30px;
+    font-weight: bolder;
+}
+#bar{
+    font-size: 1.5rem;
+    color: #ff5733;
+    font-weight: lighter;
+    display: none;
+}
+
+.back{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url("back.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+div.overaly{
+    background: #171819;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.mid{
+    position:absolute; 
+    top:50%;
+    left:50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mid p{
+    color:#9bb1b38c ;
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+}
+
+.mid h2{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.mid .btn{
+    margin-top: 2rem;
+}
+.mid .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.simple{
+    color: #fff;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem ;
+}
+.simple:hover{
+    color: #ff5733;
+    cursor: pointer;
+}
+.border{
+    color: #ff5733;
+    border: 1px solid #ff5733;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem ;
+    border-radius: 3px;
+}
+.border:hover{
+    background-color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+/* part 2 ********************************************/
+
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 15rem;
+    background-color: #171819;
+}
+.details h3,h5,h6{
+    color:#fff;
+}
+.one{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.one h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+}
+.one h6{
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 1.3rem;
+    font-weight: 200;
+    padding-bottom: 1.2rem;
+    padding-bottom: 3rem;
+}
+.one a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color:#fff;
+    padding:1rem 0;
+    background-color:#ff5733;
+}
+.one a:hover{
+    background-color: #fff;
+    color:#f13a11;
+}
+
+.two{
+    width: 45%;
+    border-left: 1px solid #666262;
+    padding :4rem;
+}
+.two h3{
+    font-size: 2.5rem;
+}
+.two h5{
+    font-size: 1.1rem;
+}
+.two p{
+    font-size: 1.1rem;
+    color: #666262;
+    margin-bottom: 0.8rem;
+}
+
+/* part 3 ****************************************************************/
+
+.trainer{
+    background: #f9f9f9;
+    padding:8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    width: 39%;
+}
+.about h2{
+    color:#212529;
+    font-size: 2.9rem;
+    padding-bottom: 1.6rem;
+}
+.about p{
+    color:#7f8c8d;
+    font-size: 1.1rem;
+}
+.people{
+    width:60%;
+    height: 56vh;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center ;
+}
+
+.team1{
+    width: 45%;
+    height:auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow:
+        4.5px 4.5px 3.6px rgba(0, 0, 0, 0.031),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
+        30.1px 30.1px 24.1px rgba(0, 0, 0, 0.059),
+        100px 100px 80px rgba(0, 0, 0, 0.09);
+}
+.img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.name, .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.name h4{
+    color: #212529;
+    font-size: 1.8rem;
+}
+.name i, .pro i{
+    color: #212529;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.name{
+    padding: 5px 20px 0 20px;
+}
+.pro p{
+    color: #212529;
+}
+.pro{
+    padding: 0px 20px 5px 20px;
+}
+
+/* part 4 ***********************************************************************/
+
+.classes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 8rem;
+}
+.para{
+    color:#95a5a6;
+    padding-bottom: 6px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.h{
+    color:#222;
+    padding-bottom: 50px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.classmenu .team1{
+    width: 25%;
+    height:auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow:
+        4.5px 4.5px 3.6px rgba(0, 0, 0, 0.031),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
+        30.1px 30.1px 24.1px rgba(0, 0, 0, 0.059),
+        100px 100px 80px rgba(0, 0, 0, 0.09);
+    transition: all 0.3s linear;
+}
+.classes .classmenu .team1:hover{
+    transform: scale(1.1);
+}
+.classmenu .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+.classes .classmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.classmenu .team1 .teamDetails .name, .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.classmenu .team1 .teamDetails .name h4{
+    color: #212529;
+    font-size: 1.8rem;
+    padding-top:10px ;
+}
+.classmenu .team1 .teamDetails .name i, .pro i{
+    color: #212529;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.classmenu .team1 .teamdetails .name{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: center;
+}
+.classmenu .team1 .teamDetails .name .nameDetails h4{
+    color: #212529;
+    font-size: 1.7rem;
+    padding: 5px 30px 0px 30px; 
+}
+.temp1{
+    color: #212529;
+    font-size: 1.1rem;
+}
+.temp2{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.num h5{
+    background: #f13a11;
+    font-size: 1rem;
+    width: 3.5rem;
+    height:3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 50%;
+}
+.pro .prop{
+    font-size: 1.1rem;
+    color: #666262b2;
+}
+
+/* part 5 *******************************************************************/
+.contact{
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact .form{
+    width: 45%;
+}
+
+.form h2{
+    font-size: 2.5rem;
+    color:#212529;
+    padding-bottom: 10px;
+    width:100%;
+}
+
+.form .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.form .submit input , .form .submit textarea{
+    width: 100%;
+    border: 1px solid #95a5a6;
+    padding: 13px;
+    outline: none;
+    margin: 10px 0;
+}
+
+.form .submit input:focus , .form .submit textarea:focus{
+    border: 2px solid rgba(17, 17, 17, 0.61);
+}
+
+.form .submit input ::placeholder{
+    color:#7f8c8d;
+    font-size: 1.1rem;
+}
+.form .submit textarea::placeholder{
+    color:#7f8c8d;
+    font-size: 1.1rem;
+    height: 80%;
+}
+
+.form .submit a{
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color:#fff;
+    background: #111;
+    padding: 15px 0;
+    border: 2px solid #171819;
+    border-radius: 5px;
+    margin: 13px 0;
+    transition: all 0.2s linear ;
+    text-align: center;
+}
+.form .submit a:hover{
+    transform: scale(1.1);
+}
+.contact .map{
+    width: 45%;
+}
+
+.contact .map #loc{
+    color: red;
+    padding-right: 4px;
+}
+.contact .map h2{
+    font-size: 2.5rem;
+    color:#212529;
+    padding-bottom: 10px;
+    width:100%;
+}
+.contact .map p{
+    font-size: 1.1rem;
+    color:#212529;
+    padding-bottom: 30px;
+    width:100%;
+}
+/* part6 *************************************************************/
+
+.footer{
+    border-top: 1px solid #ecf0f1;
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;   
+}
+.footer p{
+    color:#7f8c8d;
+    justify-content: flex-start;
+}
+.con{
+    color: red;
+    padding-right: 5px;
+    
+}
+
+/******************************* Media Query *****************************************/
+
+@media screen and (max-width: 1042px){
+    
+    div.nav{ 
+        padding: 1rem 4rem;   
+    }
+    .nav h2{
+        font-size: 1.4rem;
+    }
+    #items li{
+        padding-right: 30px;
+    }    
+    #items li a{
+        font-size: 0.9rem;
+    }
+    .social i{
+        padding-right: 20px;
+    }
+
+}
+@media screen and (max-width: 991px){
+    
+    div.nav{ 
+        padding: 1rem 3rem;   
+    }
+    .nav h2{
+        font-size: 1.4rem;
+    }
+    #items{
+        flex-direction: column;
+        align-items: center;
+        width:300px;
+        height:80vh;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 100000;
+        margin-top: 4.2rem;
+        transition: 0.5s;
+    }
+    #items li{
+        padding-right: 0px;
+        padding: 4px;
+    }    
+    #items li a{
+        font-size: 1.2rem;
+    }
+    .social{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .social i{
+        padding:0px 15px 0px 15px;
+    }
+    #bar{
+        display: initial;
+        cursor: pointer;
+    }
+
+    .mid p{
+        
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .mid h2{
+        font-size: 2.5rem;
+    }
+    
+    .mid .btn{
+        margin-top: 1.5rem;
+    }
+    .mid .btn a{
+      font-size: 0.9rem;
+    }
+    .simple{
+        padding: 0.7rem 1.4rem;
+    }
+    .border{
+        padding: 0.7rem 1.4rem;
+    }
+
+/* par2 */
+
+    .details{
+        padding: 6rem 7rem;
+    }
+    .details h3,h5,h6{
+        color:#fff;
+    }
+    .one{
+        width: 50%;
+    }
+
+    .one h3{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    .one h6{
+        font-size: 1.1rem;
+        font-weight: 100;
+        padding-bottom: 1.1rem;
+        padding-bottom: 2rem;
+    }
+    .one a{
+        font-size: 0.9rem;
+    }
+    .two{
+        padding :3rem;
+    }
+    .two h3{
+        font-size: 2rem;
+    }
+    .two h5{
+        font-size: 1rem;
+    }
+    .two p{
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+/* part3 */
+
+    .trainer{
+        padding:6rem 7rem;
+    }
+    .about h2{
+        font-size: 2rem;
+        padding-bottom: 1.2rem;
+    }
+    .about p{
+        font-size: 1rem;
+    }
+    .team1{
+        width: 48%;
+    }
+
+    .name h4{
+        font-size: 1.2rem;
+    }
+    .name i, .pro i{
+        font-size: 1.1rem;
+    }
+    .name{
+        padding: 5px 15px 0 15px;
+    }
+    .pro{
+        padding: 0px 15px 5px 15px;
+    }
+
+/* part5 *****************/
+
+    .classes{
+        padding: 3rem ;
+    }
+    .para{
+        padding-bottom: 4px;
+        font-size: 1.1rem;
+    }
+    .h{
+        padding-bottom: 30px;
+        font-size: 2rem;
+    }
+
+   .team1 .teamDetails{
+       padding-bottom: 7px;
+   }
+    .classmenu .team1 .teamDetails .name, .pro{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .classmenu .team1 .teamDetails .name h4{
+        color: #212529;
+        font-size: 1.8rem;
+        padding-top:10px ;
+    }
+    .classmenu .team1 .teamDetails .name i, .pro i{
+        color: #212529;
+        font-size: 1.6rem;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+    .classmenu .team1 .teamdetails .name{
+        padding: 5px 15px 0px 15px; 
+    }
+    .classmenu .team1 .teamDetails .name .nameDetails h4{
+        font-size: 1.2rem;
+    }
+    .temp1{
+        font-size: 1rem;
+    }
+    .temp2{
+        font-size: 1rem;
+    }
+    .num h5{
+        font-size: 0.9rem;
+        width: 3.2rem;
+        height:3.2rem;
+        line-height: 3.2rem;
+    }
+
+    .pro .prop{
+        font-size: 1rem;
+    }
+
+/* part 5 *************************************/
+
+    .contact{
+        padding: 4rem;
+    }
+    .form h2{
+        font-size: 2rem;
+        padding-bottom: 7px;
+    }
+    .form .submit input , .form .submit textarea{
+        padding: 13px;
+        margin: 8px 0;
+    }
+
+    .form .submit input:focus , .form .submit textarea:focus{
+        border: 2px solid rgba(17, 17, 17, 0.61);
+    }
+
+    .form .submit input ::placeholder{
+        font-size: 1.1rem;
+    }
+    .form .submit textarea::placeholder{
+        font-size: 1rem;
+    }
+
+    .form .submit a{
+        font-size: 1rem;
+        padding: 13px 0;
+        margin: 10px 0;
+    }
+
+    .contact .map h2{
+        font-size: 2rem;
+        padding-bottom: 7px;
+    }
+    .contact .map p{
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
+/* part6 **************/
+
+    .footer{
+        padding: 4rem ;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    
+    .nav h2{
+        font-size: 1.3rem;
+    }
+    .back{
+        background-position: center;
+    }
+
+    .mid p{
+        
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .mid h2{
+        font-size: 2.1rem;
+    }
+    
+    .mid .btn{
+        margin-top: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .simple{
+        padding: 0.7rem 1.4rem;
+        margin-bottom: 7px;
+    }
+    .border{
+        padding: 0.7rem 1.4rem;
+    }
+
+/* par2 */
+
+    .details{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .details h3,h5,h6{
+        color:#fff;
+    }
+    .one{
+        width: 70%;
+    }
+    
+    .one h6{
+        color: #7f8c8d;
+        font-size: 1.1rem;
+        font-weight: lighter;
+        padding-bottom: 1.1rem;
+        padding-bottom: 2rem;
+    }
+    .one a{
+        font-size: 1rem;
+    }
+    .two{
+        padding :0rem;
+        border-left: 0px;
+        border-top: 1px solid #666262;
+        width: 70%;
+        margin-top: 1.7rem;
+        padding-top: 1.7rem;
+    }
+
+/* part3 */
+
+    .trainer{
+        padding:5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about{
+        width: 70%;
+    }
+    .people{
+        width: 70%;
+    }
+
+/* part5 *****************/
+
+    .classes{
+        padding: 3rem ;
+    }
+
+    .classes .classmenu{
+        flex-direction: column;
+        justify-content:center;
+    }
+   
+    .classmenu .team1 .teamDetails .name h4{
+        color: #212529;
+        font-size: 1.8rem;
+        padding-top:10px ;
+    }
+    .classmenu .team1 .teamDetails .name i, .pro i{
+        color: #212529;
+        font-size: 1.6rem;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+    .classes .classmenu .team1{
+        width: 65%;
+        padding-bottom: 20px;
+        margin-bottom: 1.5rem;
+        height: 100vh;
+        transition: all 0.3s linear;
+    }
+    .classes .classmenu .team1:hover{
+        transform:scale(0.9);
+    }
+        
+
+/* part 5 *************************************/
+
+    .contact{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .form{
+        width: 70%;
+        margin-bottom: 1.5rem;
+    }
+    .form h2{
+        font-size: 2rem;
+    }
+    .contact .map{
+        width: 60%;
+    }
+  
+/* part6 **************/
+
+    .footer{
+        padding: 4rem 3rem ;
+    }
+   
+
+}
+@media screen and (max-width: 496px){
+    
+    
+    .mid p{
+        margin-bottom: 0.8rem;
+    }
+    
+    .mid h2{
+        font-size: 1.8rem;
+    }
+    
+    .mid .btn{
+        margin-top: 0.7rem;
+    }
+
+
+/* par2 */
+
+    .details{
+        padding: 4rem 1rem;
+    }
+
+    .one{
+        width: 100%;
+    }
+    
+    .two{
+        width: 100%;
+    }
+
+/* part3 */
+
+    .trainer{
+        padding:4rem 1.5rem;
+    }
+
+    .about{
+        width: 100%;
+    }
+    .people{
+        width: 100%;
+        padding-left: 5px;       
+    }
+
+/* part5 *****************/
+
+    .classes{
+        padding:  3rem 1rem ;
+    }
+
+    .classmenu .team1 .teamDetails .name h4{
+        color: #212529;
+        font-size: 1.8rem;
+        padding-top:10px ;
+    }
+    .classmenu .team1 .teamDetails .name i, .pro i{
+        color: #212529;
+        font-size: 1.6rem;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+    .classes .classmenu .team1{
+        width: 100%;
+        padding-bottom: 20px;
+        margin-bottom: 1.5rem;
+        height: auto;
+        transition: all 0.3s linear;
+    }
+    .classes .classmenu .team1:hover{
+        transform:scale(0.9);
+    }
+        
+
+/* part 5 *************************************/
+
+    .contact{
+        padding: 4rem 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+    .contact .form{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .form h2{
+        font-size: 2.5rem;
+    }
+    .contact .map{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .map iframe{
+        width: 425px;
+        height: 320px;
+    }
+  
+/* part6 **************/
+
+    .footer{
+        padding: 3rem 1.5rem ;
+    }
+
+}
