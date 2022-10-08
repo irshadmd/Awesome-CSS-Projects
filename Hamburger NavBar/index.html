@@ -1,0 +1,61 @@
+<style>
+    /* [ON BIG SCREEN] */
+/* (A) WRAPPER */
+#hamnav {
+  width: 100%;
+  background: #000;
+}
+
+/* (B) HORIZONTAL MENU ITEMS */
+#hamitems { display: flex; }
+#hamitems a {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamitems a:hover { background: #af0d0d; }
+
+/* (C) HIDE HAMBURGER */
+#hamnav label, #hamburger { display: none; }
+@media screen and (max-width: 768px){
+  /* (A) BREAK INTO VERTICAL MENU */
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+ 
+  /* (B) SHOW HAMBURGER ICON */
+  #hamnav label { 
+    display: inline-block; 
+    color: white;
+    background: #a02620;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+}
+   </style>
+
+<!-- (A) MENU WRAPPER -->
+<nav id="hamnav">
+    <!-- (B) THE HAMBURGER -->
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger"/>
+   
+    <!-- (C) MENU ITEMS -->
+    <div id="hamitems">
+      <a href="a.html">First</a>
+      <a href="b.html">Second</a>
+      <a href="c.html">Third</a>
+      <a href="d.html">Forth</a>
+    </div>
+  </nav>
