@@ -1,6 +1,5 @@
 <h1 align="center">Awesome CSS Projects🎨🎭</h1>
 
-![Hactoberfest](https://img.shields.io/badge/Hactoberfest-%E2%9D%A4-red)    
 ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-orange.svg)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square) 
 ![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red)
@@ -11,7 +10,6 @@
 [![GitHub stars](https://img.shields.io/github/stars/irshadmd/Awesome-CSS-Projects)](https://github.com/irshadmd/Awesome-CSS-Projects/stargazers)
 
 
-[![Hacktoberfest 2022](./assets/img/hacktober.png)](https://hacktoberfest.com/)
 
 <p align="center"><img src="https://media.giphy.com/media/MNmyTin5qt5LSXirxd/giphy.gif" width = 40%>
 <br/>
