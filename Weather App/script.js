@@ -4,6 +4,9 @@ const getWeatherData = (city) => {
     const URL = "https://api.openweathermap.org/data/2.5/weather";
     const FULL_URL = `${URL}?q=${city}&appid=${API_KEY}&units=imperial`;
     return fetch(FULL_URL).then((res) => {
+ if(!res.ok){
+            throw new Error('City not found');
+        }
         return res.json();
     })
 }
@@ -14,8 +17,12 @@ const searchCity = () => {
         .then((res) => {
             showWeatherData(res);
         }).catch((error) => {
-            console.log(error);
-            console.log("Something happened");
+            alert("wrong inputs");
+document.getElementById("city-name").innerText = "City not found";
+document.getElementById("weather-type").innerText = "Not found";
+document.getElementById("temp").innerText = "Not found";
+document.getElementById("min-temp").innerText = "Not found";
+    document.getElementById("max-temp").innerText = "Not found";
         })
 }
 showWeatherData = (weatherData) => {
@@ -25,4 +32,3 @@ showWeatherData = (weatherData) => {
     document.getElementById("min-temp").innerText = weatherData.main.temp_min;
     document.getElementById("max-temp").innerText = weatherData.main.temp_max;
 }
-
