@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css"></style>
+        <title>Confetti Random Number Generator</title>
+    </head>
+    <body>
+        <div id="random_div"> 
+            <h1>Random Number Generator</h1>
+            <p>Are you unsure about what number to choose? This is the perfect website for you! Choose the upper limit  of the range and let randomness choose your number!</p>
+            <div id="limit">
+                <label for="upperLimit">Enter the upper limit of the range (0 to X)</label>
+                <input type="number" id="upperLimit" min="0" required>
+            </div>
+
+            <button onclick="generateRandomNumber()">Generate</button>
+            <div id="result"></div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
